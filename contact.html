@@ -108,21 +108,23 @@ color: lightgreen;
 <br><br><br><br><br><br><br><br>
 <!-- form starts -->
 <!--https://www.staticforms.xyz/-->
+<div>
  	<h1>Contact Me !</h1>
     <form action="https://api.staticforms.xyz/submit" method="post">
         <!-- Replace with accesKey sent to your email -->
         <input type="hidden" name="accessKey" value="aed04947-004f-4684-93ce-892bd112b8db"> <!-- Required -->
         <label>Name:
-        <input type="text" name="name"><br><br> <!-- Optional -->
+        <input type="text" name="name" required><br><br> <!-- Optional -->
         <label>Subject:
-        <input type="text" name="subject"><br><br> <!-- Optional -->
+        <input type="text" name="subject" required><br><br> <!-- Optional -->
         <label>Email:
-        <input type="text" name="email"><br><br> <!-- Optional -->
+        <input type="text" name="email"required><br><br> <!-- Optional -->
         <label>Message:
-        <textarea name="message"></textarea><br><br> <!-- Optional -->
-        <input type="submit" value="Submit" />
+        <textarea name="message" required></textarea><br><br> <!-- Optional -->
+        <input type="submit" value="Submit"/>
         <br><br>
     </form>
+</div>
 <!-- form ends -->
 
 <!-- Nav Bar -->

@@ -26,7 +26,7 @@ div.box
 	margin-left:auto;
 	margin-right:auto;
 
-	height: 550px; /*390 550*/
+	height: 600px; /*390 550*/
 	width: 650px;
 
 	color: ghostwhite;
@@ -100,27 +100,79 @@ margin-top: 59px; /*Fix Movement*/
 color: lightgreen;
 }
 
+/*Div for form*/
+.container
+{
+	text-align:left;
+	margin-top: 0;
+	background-color: #D9D9D9;
+	padding: 20px;
+	border: 2px solid #ACACAC;
+	border-radius: 6px;
+	width: 50%;
+	height: 55%;
+	margin: auto;
+	color: black;
+}
+input[type=text], select, textarea {
+
+  width: 100%;
+   padding:4px;
+   border: 1px solid #ccc;
+    border-radius: 4px;
+ box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 5px;
+   resize: none;
+  
+}
+
+input[type=submit] {
+
+  background-color: #FFA200;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #1BE900;
+}
+/*form ends*/
+/*h1 padding*/
+.contactheader
+{
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+/*H1 space fixed*/
+
 </style>
 
 <body>
 
 <div class="box">
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
 <!-- form starts -->
 <!--https://www.staticforms.xyz/-->
-<div>
- 	<h1>Contact Me !</h1>
+<div class="container"> <!-- Editing Box -->
+ 	<h1 class="contactheader">Contact Me !</h1>
+
     <form action="https://api.staticforms.xyz/submit" method="post">
         <!-- Replace with accesKey sent to your email -->
         <input type="hidden" name="accessKey" value="aed04947-004f-4684-93ce-892bd112b8db"> <!-- Required -->
         <label>Name:
-        <input type="text" name="name" required><br><br> <!-- Optional -->
+        <input type="text" name="name" placeholder="Enter Name" required ><br><br> <!-- Optional -->
         <label>Subject:
-        <input type="text" name="subject" required><br><br> <!-- Optional -->
+        <input type="text" name="subject" placeholder="Enter Subject" required><br><br> <!-- Optional -->
         <label>Email:
-        <input type="text" name="email"required><br><br> <!-- Optional -->
+        <input type="text" placeholder="yourmailid@xyz.com" name="email"required><br><br> <!-- Optional -->
         <label>Message:
-        <textarea name="message" required></textarea><br><br> <!-- Optional -->
+        <textarea name="message" placeholder="Write me a message..." required></textarea> <!-- Optional -->
         <input type="submit" value="Submit"/>
         <br><br>
     </form>
